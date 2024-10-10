@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import Footer from '$lib/components/footer.svelte';
 	import Timeline from '$lib/components/timeline.svelte';
-    import Steps from '$lib/components/Statsvertical.svelte';
+    import Stats from '$lib/components/stats.svelte';
     import FAQ from '$lib/components/faq.svelte';
 
 	import Images from '$lib/components/images.svelte';
@@ -181,7 +181,7 @@
 <Testimonials />
 
 <Images />
-<Steps />
+<Stats />
 <Timeline />
 <FAQ />
 

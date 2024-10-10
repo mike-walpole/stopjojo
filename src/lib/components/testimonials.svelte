@@ -45,7 +45,7 @@
   }
 </script>
 
-<div class=" w-11/12 mx-auto px-4 py-12 font-haas border-t border-gray-200 mt-12">
+<div class=" w-11/12 mx-auto py-12 font-haas border-t border-gray-200 mt-12">
     <p class="text-gray-400  pt-8 md:mb-16 mb-6 text-xl" >Sukcesy naszych klientów</p>
     <h2 class="text-6xl md:text-9xl font-bold leading-12 md:mt-6 mb-12">Co mówią nasi klienci</h2>
   

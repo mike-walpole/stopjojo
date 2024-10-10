@@ -1,4 +1,3 @@
-
 <script>
     import { Timeline, TimelineItem, Button } from 'flowbite-svelte';
     
@@ -11,17 +10,16 @@
    
 <div class="md:mt-8">
     <Timeline>
-        <TimelineItem title="Application UI code in Tailwind CSS" date="Krok 1">
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-         
+        <TimelineItem title="Analiza Twojej sytuacji" date="Krok 1">
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Rozpoczynamy od dokładnej analizy Twojego stanu zdrowia, nawyków żywieniowych i celów. Nasi eksperci stworzą spersonalizowany plan, dostosowany do Twoich potrzeb.</p>
         </TimelineItem>
-        <TimelineItem title="Application UI code in Tailwind CSS" date="Krok 2">
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+        <TimelineItem title="Indywidualny plan żywieniowy" date="Krok 2">
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Otrzymasz szczegółowy plan żywieniowy, który nie tylko pomoże Ci schudnąć, ale także nauczy Cię zdrowych nawyków na całe życie. Plan uwzględnia Twoje preferencje i styl życia.</p>
         </TimelineItem>
-        <TimelineItem title="Application UI code in Tailwind CSS" date="Krok 3">
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+        <TimelineItem title="Wsparcie i monitorowanie postępów" date="Krok 3">
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Przez cały czas trwania kursu będziesz miał dostęp do naszych ekspertów. Regularnie monitorujemy Twoje postępy i dostosowujemy plan, aby zapewnić najlepsze rezultaty.</p>
         </TimelineItem>
-      </Timeline>
+    </Timeline>
 </div>
  
 </div>

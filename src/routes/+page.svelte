@@ -108,7 +108,7 @@
 					<a href="#contact" class="text-white text-6xl pl-2" on:click={toggleMenu}>Kontakt</a>
 				</div>
 				<a
-					href="mailto:aga@nowastrona.online"
+					href="mailto:michal@web24.studio"
 					class="bg-transparent border border-white text-white px-6 py-3 font-haas text-2xl hover:bg-white hover:text-black transition-all duration-300 flex items-center mt-8"
 				>
 					Porozmawiajmy

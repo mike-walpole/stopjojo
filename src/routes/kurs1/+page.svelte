@@ -26,7 +26,7 @@
 </svelte:head>
 
 <div class="w-11/12 mx-auto  font-haas">
-  <img src="/stopjojoblacklogo.webp" alt="Course" class="w-36 h-auto py-6">
+  <a href="/"><img src="/stopjojoblacklogo.webp" alt="Course" class="w-24 h-auto py-6"></a>
   <!-- Top Section -->
   <div class="flex flex-col md:flex-row mb-12">
     <!-- Video Section -->
@@ -114,7 +114,7 @@
 </div>
 
 {#if showPopup}
-  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" on:click={togglePopup}>
+  <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50 px-2" on:click={togglePopup}>
     <div transition:fade="{{ duration: 300 }}" class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full" on:click|stopPropagation>
       <h2 class="text-2xl font-bold mb-4">Zapisz się na kurs</h2>
       <form on:submit|preventDefault={handleSubmit}>
@@ -133,3 +133,4 @@
     </div>
   </div>
 {/if}
+

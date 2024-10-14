@@ -1,5 +1,5 @@
 <script>
-  import  Footer  from '$lib/components/Footer.svelte';
+  import  Footer  from '$lib/components/footer.svelte';
   import { fade } from 'svelte/transition';
 
   let activeTab = 'opis';

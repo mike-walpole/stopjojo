@@ -26,7 +26,7 @@
 </svelte:head>
 
 <div class="w-11/12 mx-auto  font-haas">
-  <a href="/"><img src="/stopjojoblacklogo.webp" alt="Course" class="w-24 h-auto py-6"></a>
+  <img src="/stopjojoblacklogo.webp" alt="Course" class="w-36 h-auto py-6">
   <!-- Top Section -->
   <div class="flex flex-col md:flex-row mb-12">
     <!-- Video Section -->
@@ -114,8 +114,17 @@
 </div>
 
 {#if showPopup}
-  <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md flex items-center justify-center z-50 px-2" on:click={togglePopup}>
-    <div transition:fade="{{ duration: 300 }}" class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full" on:click|stopPropagation>
+  <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50 px-2" on:click={togglePopup}>
+    <div transition:fade="{{ duration: 300 }}" class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full relative" on:click|stopPropagation>
+      <button 
+        on:click={togglePopup} 
+        class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition-colors duration-200"
+        aria-label="Close"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
       <h2 class="text-2xl font-bold mb-4">Zapisz się na kurs</h2>
       <form on:submit|preventDefault={handleSubmit}>
         <input
@@ -129,8 +138,6 @@
           Zapisz się
         </button>
       </form>
-      <button on:click={togglePopup} class="mt-4 text-sm text-gray-600 hover:text-gray-800">Zamknij</button>
     </div>
   </div>
 {/if}
-

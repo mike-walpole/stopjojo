@@ -28,6 +28,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sanity/client": "^6.22.1",
+		"@sanity/image-url": "^1.0.2",
 		"flowbite": "^2.5.2",
 		"flowbite-svelte": "^0.46.23"
 	}

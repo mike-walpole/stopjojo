@@ -3,7 +3,7 @@
 <script>
   import { browser } from '$app/environment';
   import { onMount } from 'svelte';
-  import Footer from '$lib/components/Footer.svelte';
+  import Footer from '$lib/components/footer.svelte';
   let isMenuOpen = false;
 	let isMobile = false;
 	let parallaxContainer;

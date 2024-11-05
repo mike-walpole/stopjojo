@@ -1,16 +1,17 @@
 <script>
   const stats = [
-    { number: "98%", description: "Wskaźnik sukcesu uczestników", highlight: "uczestników" },
-    { number: "150+", description: "Dostępnych planów dietetycznych", highlight: "dietetycznych" },
-    { number: "10+", description: "Certyfikowanych dietetyków", highlight: "dietetyków" },
-    { number: "24/7", description: "Dostęp do kursów online", highlight: "online" },
+    { number: "95%", description: "Klientek osiąga swoje cele", highlight: "cele" },
+    { number: "15+", description: "Lat doświadczenia w dietetyce klinicznej", highlight: "doświadczenia" },
+    { number: "1000+", description: "Zadowolonych uczestniczek programu", highlight: "uczestniczek" },
+    { number: "24/7", description: "Dostęp do materiałów i wsparcia", highlight: "wsparcia" },
   ];
 </script>
 
-<section class="py-16 ">
-    
-  <div class="w-11/12 mx-auto ">
-    <h1 class="text-6xl md:text-9xl font-bold mb-20 text-left border-b border-gray-200 pb-10">Co robimy</h1>
+<section class="py-16">
+  <div class="w-11/12 mx-auto">
+    <h1 class="text-6xl md:text-9xl font-bold mb-20 text-left border-b border-gray-200 pb-10">
+      Twoje zdrowie w liczbach
+    </h1>
     <div class="flex flex-col md:flex-row gap-8">
       <!-- Left side - Image -->
       <div class="w-full md:w-1/2">

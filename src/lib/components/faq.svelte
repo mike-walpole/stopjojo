@@ -1,23 +1,23 @@
 <script>
   let faqs = [
     {
-      question: "Czy te kursy są odpowiednie dla początkujących?",
-      answer: "Absolutnie! Nasze kursy są zaprojektowane dla osób na każdym poziomie zaawansowania. Niezależnie od tego, czy dopiero zaczynasz swoją przygodę z dietą, czy już masz pewne doświadczenie, znajdziesz u nas wiedzę i wsparcie dostosowane do Twoich potrzeb. Zaczynamy od podstaw i stopniowo wprowadzamy bardziej zaawansowane koncepcje, dzięki czemu każdy może podążać własnym tempem.",
+      question: "Jak wygląda proces konsultacji online?",
+      answer: "Konsultacje odbywają się przez wygodną platformę wideokonferencyjną. Przed spotkaniem otrzymasz krótką ankietę do wypełnienia, dzięki której lepiej poznamy Twoje potrzeby. Podczas 50-minutowej sesji omówimy Twoją sytuację, odpowiemy na pytania i ustalimy plan działania. Po konsultacji otrzymasz spersonalizowane zalecenia i dostęp do materiałów edukacyjnych.",
       isOpen: false
     },
     {
-      question: "Jak długo trwa dostęp do kursu?",
-      answer: "Dobra wiadomość! Po zakupie kursu masz do niego dożywotni dostęp. Oznacza to, że możesz wracać do materiałów tak często, jak chcesz, odświeżać wiedzę i śledzić swoje postępy bez ograniczeń czasowych. To inwestycja w siebie, która procentuje przez lata!",
+      question: "Czy program uwzględnia mój napięty grafik?",
+      answer: "Absolutnie! Rozumiemy, jak wymagające jest łączenie kariery, rodziny i dbania o siebie. Nasze programy są elastyczne - możesz korzystać z materiałów w dogodnym czasie, a konsultacje planujemy w terminach dopasowanych do Twojego kalendarza, także w godzinach wieczornych.",
       isOpen: false
     },
     {
-      question: "Czy potrzebuję specjalnego sprzętu do ćwiczeń?",
-      answer: "Nie martw się o sprzęt! Nasze treningi są zaprojektowane tak, aby można je było wykonywać w domu z minimalnym wyposażeniem lub całkowicie bez niego. Skupiamy się na ćwiczeniach z masą własnego ciała i prostych technikach, które są skuteczne i nie wymagają drogiego sprzętu. Jeśli masz pod ręką hantle czy matę do ćwiczeń - świetnie, ale nie są one konieczne do osiągnięcia świetnych rezultatów.",
+      question: "Jak długo trzeba czekać na pierwsze efekty?",
+      answer: "Pierwsze pozytywne zmiany, takie jak lepsze samopoczucie i więcej energii, zauważysz już po 2-3 tygodniach. Trwałe efekty w postaci zmiany nawyków i stabilnej wagi osiągamy zwykle po 3-4 miesiącach regularnej pracy. Pamiętaj, że stawiamy na zdrowe, stopniowe zmiany, które pozostaną z Tobą na lata.",
       isOpen: false
     },
     {
-      question: "Czy otrzymam indywidualne wsparcie podczas kursu?",
-      answer: "Oczywiście! Twój sukces jest naszym priorytetem. Oprócz dostępu do materiałów kursowych, oferujemy regularne sesje Q&A z naszymi ekspertami, gdzie możesz zadawać pytania i otrzymywać spersonalizowane porady. Dodatkowo, nasza aktywna społeczność kursantów i moderatorzy forum są zawsze gotowi, aby udzielić wsparcia, podzielić się doświadczeniami i zmotywować Cię do działania. Nigdy nie zostaniesz sam na swojej drodze do zdrowszego stylu życia!",
+      question: "Czy otrzymam wsparcie w trudnych momentach?",
+      answer: "Tak, jesteśmy z Tobą na każdym etapie. Oprócz regularnych konsultacji, masz dostęp do zamkniętej grupy wsparcia, gdzie spotykają się kobiety o podobnych celach. Organizujemy też cotygodniowe sesje Q&A z ekspertami, podczas których możesz zadawać pytania i dzielić się wyzwaniami.",
       isOpen: false
     }
   ];

@@ -1,40 +1,22 @@
 <script>
   const testimonials = [
     {
-      name: "Anna Kowalska",
+      name: "Anna Kowalska, 42 lata",
       rating: 5,
-      text: "Ten kurs odmienił moje życie! Schudłam 15 kg w 4 miesiące, ale co ważniejsze, nauczyłam się, jak zdrowo się odżywiać. Energia, którą teraz mam, jest niesamowita. Polecam każdemu, kto chce trwale zmienić swoje nawyki żywieniowe!",
+      text: "Po latach nieudanych prób wreszcie znalazłam program, który naprawdę działa. Najbardziej cenię indywidualne podejście i to, że nie musiałam rezygnować z życia towarzyskiego. Schudłam 12 kg w pół roku, ale ważniejsze jest to, że nauczyłam się zdrowych nawyków i wreszcie czuję się dobrze we własnej skórze.",
       image: "anna.webp"
     },
     {
-      name: "Piotr Nowak",
-      rating: 4,
-      text: "Jako mężczyzna po czterdziestce, myślałem, że trudno będzie mi zrzucić zbędne kilogramy. Ten kurs udowodnił, że się myliłem! Proste, ale skuteczne porady dietetyczne i treningi, które mogę robić w domu, dały rewelacyjne efekty. Moja żona jest pod wrażeniem mojej nowej sylwetki!",
-      image: "piotr.webp"
-    },
-    {
-      name: "Marta Wiśniewska",
-      rating: 4.5,
-      text: "Próbowałam wielu diet, ale dopiero ten kurs nauczył mnie, jak jeść zdrowo bez wyrzeczeń. Uwielbiam, że przepisy są smaczne i łatwe do przygotowania. Po 2 miesiącach moje ubrania są luźniejsze, a ja czuję się pewniejsza siebie. Dziękuję! ",
+      name: "Magdalena Nowak, 38 lat",
+      rating: 5,
+      text: "Jako mama dwójki dzieci i menedżerka, zawsze brakowało mi czasu na dbanie o siebie. Ten program pokazał mi, jak wprowadzać zdrowe nawyki mimo napiętego grafiku. Konsultacje online są nieocenione - mogę porozmawiać z dietetykiem wieczorem, gdy dzieci już śpią.",
       image: "marta.webp"
     },
     {
-      name: "Tomasz Kowalczyk",
+      name: "Katarzyna Wiśniewska, 47 lat",
       rating: 5,
-      text: "Jako kierowca ciężarówki, zawsze miałem problem z utrzymaniem zdrowej diety. Ten kurs pokazał mi, jak planować posiłki nawet w trasie. Schudłem 10 kg i moje wyniki badań znacznie się poprawiły. Polecam wszystkim, którzy myślą, że ich tryb życia uniemożliwia zdrowe odżywianie!",
-      image: "piotr.webp"
-    },
-    {
-      name: "Ewa Dąbrowska",
-      rating: 4,
-      text: "Jestem mamą trójki dzieci i myślałam, że nie mam czasu na dbanie o siebie. Ten kurs udowodnił, że to nieprawda! Szybkie przepisy i krótkie, ale intensywne treningi idealnie wpasowały się w mój napięty grafik. Schudłam 8 kg i mam więcej energii do zabawy z dziećmi. Cudowne uczucie!",
-      image: "piotr.webp"
-    },
-    {
-      name: "Marek Zieliński",
-      rating: 4.5,
-      text: "Jako programista, spędzam większość dnia przed komputerem. Obawiałem się, że to uniemożliwi mi schudnięcie. Dzięki temu kursowi nauczyłem się, jak zdrowo się odżywiać i ćwiczyć, nawet mając siedzący tryb pracy. Zrzuciłem 12 kg i czuję się jak nowo narodzony. Mój zespół w pracy jest pod wrażeniem mojej transformacji!",
-      image: "piotr.webp"
+      text: "Program całkowicie zmienił moje podejście do odżywiania. Przestałam się stresować jedzeniem i nauczyłam się, jak komponować zdrowe posiłki bez liczenia każdej kalorii. Po menopauzie myślałam, że już nie wrócę do dawnej formy, ale z pomocą ekspertów udało się! Czuję się świetnie i pełna energii.",
+      image: "marta.webp"
     }
   ];
 
@@ -45,9 +27,11 @@
   }
 </script>
 
-<div class=" w-11/12 mx-auto py-12 font-haas border-t border-gray-200 mt-12">
-    <p class="text-gray-400  pt-8 md:mb-16 mb-6 text-xl" >Sukcesy naszych klientów</p>
-    <h2 class="text-6xl md:text-9xl font-bold leading-12 md:mt-6 mb-12">Co mówią nasi klienci</h2>
+<div class="w-11/12 mx-auto py-12 font-haas border-t border-gray-200 mt-12">
+    <p class="text-gray-400 pt-8 md:mb-16 mb-6 text-xl">Historie sukcesu</p>
+    <h2 class="text-6xl md:text-9xl font-bold leading-12 md:mt-6 mb-12">
+      Poznaj nasze klientki
+    </h2>
   
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     {#each testimonials as { name, rating, text, image }}

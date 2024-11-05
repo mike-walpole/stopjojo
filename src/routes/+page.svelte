@@ -4,6 +4,7 @@
 	import Timeline from '$lib/components/timeline.svelte';
     import Stats from '$lib/components/stats.svelte';
     import FAQ from '$lib/components/faq.svelte';
+	import ThreeArticles from '$lib/components/threearticles.svelte';
 
 	import Images from '$lib/components/images.svelte';
 
@@ -138,48 +139,47 @@
 		<div
 			class="text-white text-2xl font-bold leading-tight md:text-5xl mb-4 md:mb-0 order-1 md:order-1 md:pr-6"
 		>
-			Rewolucyjne Kursy Dietetyczne Online: Twoja Droga do Zdrowia i Dobrego Samopoczucia
+			Odkryj Nową Siebie: Profesjonalne Wsparcie w Drodze do Zdrowia i Dobrego Samopoczucia
 		</div>
-		<img src="/stopjojowhitelogo.webp" alt="Firs Logo" class="w-full md:w-1/2 order-1 md:order-2" />
+		<img src="/stopjojowhitelogo.webp" alt="Logo" class="w-full md:w-1/2 order-1 md:order-2" />
 	</div>
 </div>
 <div class="border-b w-11/12 pt-24 mx-auto"></div>
 
 <div class="font-haas w-11/12 mx-auto">
-	<p class="text-gray-400 pt-8 md:mb-16 mb-6 text-xl">Witamy</p>
+	<p class="text-gray-400 pt-8 md:mb-16 mb-6 text-xl">Witaj w świecie zdrowych zmian</p>
 	<h2 class="text-3xl md:text-5xl md:font-bold leading-tight md:w-3/5">
-		Czy marzysz o zdrowym i szczupłym ciele, ale nie wiesz, od czego zacząć? Nasze innowacyjne kursy
-		dietetyczne online to klucz do Twojej transformacji! Kursy są przygotowane przez ekspertów w
-		dziedzinie żywienia i fitness.
+		Zasługujesz na to, by czuć się wspaniale w swoim ciele. Nasza platforma łączy wiedzę ekspertów, 
+		sprawdzone metody i indywidualne podejście, by pomóc Ci osiągnąć trwałe efekty bez wyrzeczeń i restrykcyjnych diet.
 	</h2>
 </div>
 
-<!-- Change this to a single column layout -->
 <div class="px-5 max-w-4xl mx-auto mt-24 grid grid-cols-1">
-	<h2 class="mb-10 text-3xl">Spersonalizowane plany żywieniowe</h2>
+	<h2 class="mb-10 text-3xl">Kompleksowe Wsparcie</h2>
 	<div>
-		<p class="mb-2 text-xl">Wielkie doświadczenie</p>
+		<p class="mb-2 text-xl">Eksperci z pasją</p>
 		<p class="text-gray-500">
-			Odkryj, jak jeść smacznie i zdrowo, dostosowując dietę do swoich indywidualnych potrzeb i
-			preferencji.
+			Nasz zespół doświadczonych dietetyków i psychologów żywienia pomoże Ci zrozumieć Twoje nawyki 
+			żywieniowe i stworzyć zdrową relację z jedzeniem. Oferujemy konsultacje online, które dopasują 
+			się do Twojego napiętego grafiku.
 		</p>
 	</div>
 </div>
 
-<!-- Change this to a single column layout as well -->
 <div class="px-5 max-w-4xl mx-auto mt-24 grid grid-cols-1">
-	<h2 class="mb-10 text-3xl">Efekty</h2>
+	<h2 class="mb-10 text-3xl">Trwałe Rezultaty</h2>
 	<div>
-		<p class="mb-2 text-xl">Budujemy na przyszłość, nie tylko na dzisiaj!</p>
+		<p class="mb-2 text-xl">Zmiana na lepsze</p>
 		<p class="text-gray-500">
-			Nasze sprawdzone metody pomogły już tysiącom osób osiągnąć wymarzoną sylwetkę i poprawić
-			zdrowie.
+			Nasze metody opierają się na najnowszych badaniach naukowych i wieloletnim doświadczeniu. 
+			Nie oferujemy cudownych diet, lecz sprawdzone sposoby na wprowadzenie trwałych, zdrowych 
+			nawyków, które będą służyć Ci przez lata.
 		</p>
 	</div>
 </div>
 
 <Testimonials />
-
+<ThreeArticles />
 <Images />
 <Stats />
 <Timeline />

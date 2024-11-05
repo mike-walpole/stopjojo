@@ -5,6 +5,7 @@
     import Stats from '$lib/components/stats.svelte';
     import FAQ from '$lib/components/faq.svelte';
 	import ThreeArticles from '$lib/components/threearticles.svelte';
+	import Services from '$lib/components/services.svelte';
 
 	import Images from '$lib/components/images.svelte';
 
@@ -180,7 +181,8 @@
 
 <Testimonials />
 <ThreeArticles />
-<Images />
+<Services />
+
 <Stats />
 <Timeline />
 <FAQ />

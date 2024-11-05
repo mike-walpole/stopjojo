@@ -80,7 +80,7 @@
 <div class="w-11/12 mx-auto py-12 font-haas border-t border-gray-200 mt-12">
     <p class="text-gray-400 pt-8 md:mb-16 mb-6 text-xl">Dołącz do nas</p>
     <h2 class="text-6xl md:text-9xl font-bold leading-12 md:mt-6 mb-12">
-      Zacznij swoją transformację
+      Zacznij swoją zmianę
     </h2>
     <p class="text-xl md:text-2xl text-gray-600 max-w-3xl">
       Nie czekaj na idealny moment - on właśnie nadszedł. Zapisz się na listę oczekujących i bądź pierwsza, gdy otworzymy nowe miejsca.
@@ -98,7 +98,7 @@
         class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
       />
       <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 flex-col">
-        <h2 class="text-6xl md:text-6xl font-bold text-white uppercase mb-6">{service.title}</h2>
+        <h2 class="text-5xl md:text-5xl font-bold text-white uppercase mb-6">{service.title}</h2>
         <div class="flex items-center border-b border-white bg-white text-black px-4 py-2">
           <p class="text-2xl font-bold font-haas uppercase">Zapisz się teraz</p>
           <svg 

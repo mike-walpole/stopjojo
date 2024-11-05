@@ -2,7 +2,7 @@
   const stats = [
     { number: "95%", description: "Klientek osiąga swoje cele", highlight: "cele" },
     { number: "15+", description: "Lat doświadczenia w dietetyce klinicznej", highlight: "doświadczenia" },
-    { number: "1000+", description: "Zadowolonych uczestniczek programu", highlight: "uczestniczek" },
+    { number: "100+", description: "Zadowolonych uczestniczek programu", highlight: "uczestniczek" },
     { number: "24/7", description: "Dostęp do materiałów i wsparcia", highlight: "wsparcia" },
   ];
 </script>

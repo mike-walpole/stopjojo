@@ -77,8 +77,16 @@
     }
   }
 </script>
-
-<div class="w-11/12 max-w-5xl mx-auto py-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="w-11/12 mx-auto py-12 font-haas border-t border-gray-200 mt-12">
+    <p class="text-gray-400 pt-8 md:mb-16 mb-6 text-xl">Dołącz do nas</p>
+    <h2 class="text-6xl md:text-9xl font-bold leading-12 md:mt-6 mb-12">
+      Zacznij swoją transformację
+    </h2>
+    <p class="text-xl md:text-2xl text-gray-600 max-w-3xl">
+      Nie czekaj na idealny moment - on właśnie nadszedł. Zapisz się na listę oczekujących i bądź pierwsza, gdy otworzymy nowe miejsca.
+    </p>
+</div>
+<div class="w-11/12  mx-auto py-24 grid grid-cols-1 md:grid-cols-3 gap-8">
   {#each services as service}
     <button 
       on:click={() => openModal(service)}
@@ -90,9 +98,9 @@
         class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
       />
       <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 flex-col">
-        <h2 class="text-4xl md:text-4xl font-bold text-white uppercase mb-6">{service.title}</h2>
-        <div class="flex items-center text-white">
-          <p class="text-2xl font-bold font-haas">Zapisz się teraz</p>
+        <h2 class="text-6xl md:text-6xl font-bold text-white uppercase mb-6">{service.title}</h2>
+        <div class="flex items-center border-b border-white bg-white text-black px-4 py-2">
+          <p class="text-2xl font-bold font-haas uppercase">Zapisz się teraz</p>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             class="h-6 w-6 ml-2 transform -rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" 
@@ -115,7 +123,7 @@
 
 {#if showModal}
   <div 
-    class="fixed inset-0  backdrop-blur-sm flex items-center justify-center z-50 px-4"
+    class="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50 px-4"
     on:click={closeModal}
     transition:fade
     role="dialog"
@@ -133,7 +141,11 @@
         </svg>
       </button>
 
-      <h2 class="text-2xl font-bold mb-6">{selectedService?.title}</h2>
+      <div class="text-center mb-8">
+        <p class="text-gray-600 text-sm uppercase tracking-wider mb-2">Dołącz do grona zadowolonych klientek</p>
+        <h2 class="text-2xl font-bold mb-2">{selectedService?.title}</h2>
+        <p class="text-gray-600">Zarezerwuj swoje miejsce już dziś i rozpocznij transformację z profesjonalnym wsparciem.</p>
+      </div>
 
       <form on:submit|preventDefault={handleSubmit} class="space-y-4">
         <div>
@@ -171,8 +183,11 @@
           disabled={isSubmitting}
           class="w-full bg-black text-white py-2 rounded-md hover:bg-gray-800 transition-colors disabled:bg-gray-400"
         >
-          {isSubmitting ? 'Wysyłanie...' : 'Bądź pierwsza w kolejce!'}
+          {isSubmitting ? 'Wysyłanie...' : 'Dołącz do listy oczekujących'}
         </button>
+        <p class="text-xs text-center text-gray-500 mt-2">
+          Liczba miejsc jest ograniczona. Zapisz się teraz, aby otrzymać pierwszeństwo dostępu.
+        </p>
       </form>
     </div>
   </div>

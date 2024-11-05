@@ -41,6 +41,14 @@
 	}
 </script>
 
+<svelte:head>
+  <title>StopJojo - Profesjonalne Wsparcie w Drodze do Zdrowia</title>
+  <meta property="og:image" content="/a1.webp" />
+  <meta property="og:title" content="StopJojo - Profesjonalne Wsparcie w Drodze do Zdrowia" />
+  <meta property="og:description" content="Odkryj Nową Siebie: Profesjonalne Wsparcie w Drodze do Zdrowia i Dobrego Samopoczucia" />
+  <meta name="twitter:card" content="summary_large_image" />
+</svelte:head>
+
 <div class="relative overflow-hidden">
 	<!-- Hero image with darkening overlay -->
 	<div class="relative w-full h-screen">

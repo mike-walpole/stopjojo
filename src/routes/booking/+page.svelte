@@ -20,3 +20,11 @@
   <li>Your third list item</li>
   <!-- ... more list items ... -->
 </ul>
+
+<svelte:head>
+  <title>Umów Konsultację - StopJojo</title>
+  <meta property="og:image" content="/a1.webp" />
+  <meta property="og:title" content="Umów Konsultację - StopJojo" />
+  <meta property="og:description" content="Zarezerwuj swoją konsultację online z naszymi ekspertami" />
+  <meta name="twitter:card" content="summary_large_image" />
+</svelte:head>

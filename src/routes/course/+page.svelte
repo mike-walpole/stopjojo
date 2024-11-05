@@ -22,7 +22,11 @@
 </script>
 
 <svelte:head>
-  <title>Skuteczne Odchudzanie: 30-Dniowy Program - Platforma Kursów Online</title>
+  <title>Kursy Online - StopJojo</title>
+  <meta property="og:image" content="/a1.webp" />
+  <meta property="og:title" content="Kursy Online - StopJojo" />
+  <meta property="og:description" content="Profesjonalne kursy online dla trwałej zmiany nawyków żywieniowych" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="w-11/12 mx-auto  font-haas">

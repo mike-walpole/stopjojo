@@ -7,6 +7,10 @@
 
 <svelte:head>
   <title>Magazyn - StopJojo</title>
+  <meta property="og:image" content="/a1.webp" />
+  <meta property="og:title" content="Magazyn - StopJojo" />
+  <meta property="og:description" content="Historie, porady i inspiracje dla zdrowszego stylu życia" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="w-11/12 max-w-5xl mx-auto py-24">

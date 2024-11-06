@@ -8,10 +8,11 @@
 
 <svelte:head>
   <title>{data.article.title} - StopJojo Magazyn</title>
-  <meta property="og:image" content="/a1.webp" />
+  <meta property="og:image" content={urlFor(data.article.mainImage).width(1200).height(630).url()} />
   <meta property="og:title" content={`${data.article.title} - StopJojo Magazyn`} />
   <meta property="og:description" content={data.article.quip} />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={urlFor(data.article.mainImage).width(1200).height(630).url()} />
 </svelte:head>
 
 <article class="min-h-screen font-haas">

@@ -39,10 +39,27 @@
     
     <!-- Course Info Section -->
     <div class="md:w-1/2">
-      <h1 class="text-5xl font-bold mb-4">Skuteczne Odchudzanie: 30-Dniowy Program</h1>
+      <h1 class="text-5xl font-bold font-haas mb-4">Skuteczne Odchudzanie: 30-Dniowy Program</h1>
       <p class="text-lg mb-4 md:mb-12">Odkryj sprawdzone metody utraty wagi i poprawy zdrowia w naszym kompleksowym kursie.</p>
-      <button on:click={togglePopup} class="bg-[#ffa420] w-full px-6 py-2 hover:bg-white hover:border-black hover:border transition duration-300">
-        Zapisz się teraz
+      <button 
+        on:click={togglePopup} 
+        class="bg-black text-white w-full px-6 py-2 hover:text-black hover:bg-white hover:border-black hover:border transition duration-300 flex items-center justify-center group"
+      >
+        <span>Zapisz się teraz</span>
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          class="h-5 w-5 ml-2 transform -rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" 
+          fill="none" 
+          viewBox="0 0 24 24" 
+          stroke="currentColor"
+        >
+          <path 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="1.5" 
+            d="M14 5l7 7m0 0l-7 7m7-7H3" 
+          />
+        </svg>
       </button>
     </div>
   </div>
@@ -51,7 +68,7 @@
   <div class="flex flex-col md:flex-row">
     <!-- Key Deliverables -->
     <div class="md:w-3/12 mb-6 md:mb-0 md:pr-6">
-      <h2 class="text-lg font-bold mb-4">Kluczowe Elementy</h2>
+      <h2 class="text-lg font-bold mb-4">Czego oczekiwać?</h2>
       <ul class="list-disc pl-5">
         <li class="mb-2">Spersonalizowany plan żywieniowy</li>
         <li class="mb-2">Codzienne treningi wideo</li>

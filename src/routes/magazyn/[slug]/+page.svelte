@@ -1,6 +1,7 @@
 <script>
   import { urlFor } from '$lib/utils';
   import { PortableText } from '@portabletext/svelte';
+  import Footer from '$lib/components/footer.svelte';
   
   /** @type {import('./$types').PageData} */
   export let data;
@@ -40,3 +41,5 @@
     <PortableText value={data.article.content} />
   </div>
 </article> 
+
+<Footer />

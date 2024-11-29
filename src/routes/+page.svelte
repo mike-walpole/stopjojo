@@ -6,6 +6,8 @@
     import FAQ from '$lib/components/faq.svelte';
 	import ThreeArticles from '$lib/components/threearticles.svelte';
 	import Services from '$lib/components/services.svelte';
+	import BMICalculator from '$lib/components/bmi-calculator.svelte';
+  
 
 	import Images from '$lib/components/images.svelte';
 
@@ -53,7 +55,7 @@
 	<!-- Hero image with darkening overlay -->
 	<div class="relative w-full h-screen">
 		<div bind:this={parallaxContainer} class="absolute inset-0" style="transform: translateY(0);">
-			<img src="/hero.webp" alt="Hero" class="w-full h-full object-cover" />
+			<img src="/ph1.png" alt="Hero" class="w-full h-full object-cover" />
 		</div>
 		<div class="absolute inset-0 bg-black opacity-20"></div>
 	</div>
@@ -190,7 +192,7 @@
 <Testimonials />
 <ThreeArticles />
 <Services />
-
+<BMICalculator />
 <Stats />
 <Timeline />
 <FAQ />

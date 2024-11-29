@@ -10,17 +10,17 @@
   const services = [
     {
       title: 'Książki',
-      image: '/a1.webp',
+      image: '/ph0.png',
       type: 'książki'
     },
     {
       title: 'Konsultacje',
-      image: '/a2.webp',
+      image: '/ph0.png',
       type: 'konsultacje'
     },
     {
       title: 'Kursy Online',
-      image: '/a3.webp',
+      image: '/ph0.png',
       type: 'kursy_online'
     }
   ];

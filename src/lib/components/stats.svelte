@@ -15,7 +15,7 @@
     <div class="flex flex-col md:flex-row gap-8">
       <!-- Left side - Image -->
       <div class="w-full md:w-1/2">
-        <img src="/a2.webp" alt="Stats" class="w-full h-full object-cover rounded-lg">
+        <img src="/ph3.png" alt="Stats" class="w-full h-full object-cover rounded-lg">
       </div>
 
       <!-- Right side - Stats -->

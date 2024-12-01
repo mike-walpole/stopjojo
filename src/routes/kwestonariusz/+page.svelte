@@ -1,8 +1,8 @@
 <script>
     import { createClient } from '@supabase/supabase-js';
     import { fade } from 'svelte/transition';
-    import Footer from '$lib/components/Footer.svelte';
-    import Navbar from '$lib/components/Navbar.svelte';
+    import Footer from '$lib/components/footer.svelte';
+    import Navbar from '$lib/components/navbar.svelte';
   
     const supabase = createClient(
       import.meta.env.VITE_SUPABASE_URL,
@@ -48,12 +48,26 @@
     let email = '';
     let isSubmitting = false;
     let showSuccess = false;
+    let selectedIndex = null;
+    let isTransitioning = false;
   
-    function handleAnswer(value) {
+    async function handleAnswer(value, index) {
+      if (isTransitioning) return;
+      
+      isTransitioning = true;
+      selectedIndex = index;
+      
+      // Wait for the pulse animation
+      await new Promise(resolve => setTimeout(resolve, 500));
+      
       answers[currentQuestion] = value;
       if (currentQuestion < questions.length) {
         currentQuestion++;
       }
+      
+      // Reset for next question
+      selectedIndex = null;
+      isTransitioning = false;
     }
   
     function goBack() {
@@ -85,6 +99,25 @@
     }
   </script>
   
+  <style>
+    .pulse {
+      animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        background-color: white;
+        color: black;
+      }
+      50% {
+        transform: scale(1.05);
+        background-color: black;
+        color: white;
+      }
+    }
+  </style>
+  
   <div class="min-h-screen bg-white font-haas">
     <Navbar />
     <div class="w-11/12 max-w-3xl mx-auto pt-24">
@@ -112,8 +145,9 @@
             <div class="grid grid-cols-4 md:grid-cols-4 gap-4">
               {#each questions[currentQuestion].labels as label, index}
                 <button
-                  on:click={() => handleAnswer(index + 1)}
-                  class="p-4 border-2 border-black hover:bg-black hover:text-white transition-colors duration-300 aspect-square flex items-center justify-center text-center"
+                  on:click={() => handleAnswer(index + 1, index)}
+                  class="p-4 border-2 border-black hover:bg-black hover:text-white transition-colors duration-300 aspect-square flex items-center justify-center text-center {selectedIndex === index ? 'pulse' : ''}"
+                  disabled={isTransitioning}
                 >
                   {label}
                 </button>
@@ -158,7 +192,7 @@
                 disabled={isSubmitting}
                 class="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition-colors disabled:bg-gray-400"
               >
-                {isSubmitting ? 'Wysyłanie...' : 'Wyślij'}
+                {isSubmitting ? 'Wysyłanie...' : 'Poznaj swoje wyniki'}
               </button>
             </form>
           </div>

@@ -63,11 +63,15 @@
       answers[currentQuestion] = value;
       if (currentQuestion < questions.length) {
         currentQuestion++;
+        // Force reset of selectedIndex and isTransitioning after transition
+        setTimeout(() => {
+          selectedIndex = null;
+          isTransitioning = false;
+        }, 0);
+      } else {
+        selectedIndex = null;
+        isTransitioning = false;
       }
-      
-      // Reset for next question
-      selectedIndex = null;
-      isTransitioning = false;
     }
   
     function goBack() {
@@ -116,6 +120,14 @@
         color: white;
       }
     }
+
+    /* Add specific mobile styles */
+    @media (max-width: 768px) {
+      .answer-button:hover {
+        background-color: white;
+        color: black;
+      }
+    }
   </style>
   
   <div class="min-h-screen bg-white font-haas">
@@ -146,10 +158,10 @@
               {#each questions[currentQuestion].labels as label, index}
                 <button
                   on:click={() => handleAnswer(index + 1, index)}
-                  class="p-4 border-2 border-black hover:bg-black hover:text-white transition-colors duration-300 aspect-square flex items-center justify-center text-center {selectedIndex === index ? 'pulse' : ''}"
+                  class="answer-button p-4 border-2 border-black transition-colors duration-300 aspect-square flex items-center justify-center text-center {selectedIndex === index ? 'pulse' : ''} md:hover:bg-black md:hover:text-white"
                   disabled={isTransitioning}
                 >
-                  {label}
+                  <span class="text-xs md:text-base">{label}</span>
                 </button>
               {/each}
             </div>

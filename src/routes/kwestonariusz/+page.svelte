@@ -146,7 +146,7 @@
           <div class="w-full bg-gray-200 h-1 rounded-full">
             <div 
               class="bg-black h-1 rounded-full transition-all duration-500"
-              style="width: {currentQuestion === questions.length ? '100' : (currentQuestion / questions.length) * 100}%"
+              style="width: {currentQuestion === questions.length ? '100' : ((currentQuestion + 1) / (questions.length + 1)) * 100}%"
             ></div>
           </div>
         </div>

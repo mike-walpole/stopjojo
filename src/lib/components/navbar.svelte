@@ -16,7 +16,7 @@
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex items-center space-x-8">
-      <a href="/ksiazki" class="text-black hover:text-gray-600 transition-colors">Książki</a>
+      <a href="/ksiegarnia" class="text-black hover:text-gray-600 transition-colors">Książki</a>
       <a href="/kursy" class="text-black hover:text-gray-600 transition-colors">Kursy</a>
       <a href="/przepisy" class="text-black hover:text-gray-600 transition-colors">Przepisy</a>
       <a href="/konsultacje" class="text-black hover:text-gray-600 transition-colors">Konsultacje</a>
@@ -51,7 +51,7 @@
     >
       <div class="flex flex-col items-center justify-center min-h-screen w-full space-y-12 text-4xl">
         <a 
-          href="/ksiazki" 
+          href="/ksiegarnia" 
           class="text-black hover:text-gray-600 transition-colors font-bold"
           on:click={() => isMenuOpen = false}
         >

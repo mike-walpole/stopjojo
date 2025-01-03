@@ -94,6 +94,10 @@
 						<span class="absolute -left-4 text-gray-300 text-sm font-haas font-bold">03</span>
 						<a href="#contact" class="text-white hover:text-gray-300 text-2xl pl-1">Kontakt</a>
 					</div>
+					<div class="relative">
+						<span class="absolute -left-4 text-gray-300 text-sm font-haas font-bold">04</span>
+						<a href="/ksiegarnia" class="text-white hover:text-gray-300 text-2xl pl-1">Księgarnia</a>
+					</div>
 				</div>
 			</div>
 		{/if}
@@ -115,10 +119,14 @@
 					<span class="absolute font-haas font-bold -left-4 text-gray-400 mr-2">02</span>
 					<a href="#work" class="text-white text-6xl pl-2" on:click={toggleMenu}>Kursy</a>
 				</div>
-				<div class="relative">
-					<span class="absolute font-haas font-bold -left-4 text-gray-400">03</span>
-					<a href="#contact" class="text-white text-6xl pl-2" on:click={toggleMenu}>Kontakt</a>
-				</div>
+					<div class="relative">
+						<span class="absolute font-haas font-bold -left-4 text-gray-400">03</span>
+						<a href="#contact" class="text-white text-6xl pl-2" on:click={toggleMenu}>Kontakt</a>
+					</div>
+					<div class="relative">
+						<span class="absolute font-haas font-bold -left-4 text-gray-400">04</span>
+						<a href="/ksiegarnia" class="text-white text-6xl pl-2" on:click={toggleMenu}>Księgarnia</a>
+					</div>
 				<a
 					href="mailto:michal@web24.studio"
 					class="bg-transparent border border-white text-white px-6 py-3 font-haas text-2xl hover:bg-white hover:text-black transition-all duration-300 flex items-center mt-8"

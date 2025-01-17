@@ -55,7 +55,7 @@
 	<!-- Hero image with darkening overlay -->
 	<div class="relative w-full h-screen">
 		<div bind:this={parallaxContainer} class="absolute inset-0" style="transform: translateY(0);">
-			<img src="/hero-bg.webp" alt="Hero" class="w-full h-full object-cover" />
+			<img src="/hero-lg.avif" alt="Hero" class="w-full h-full object-cover" />
 		</div>
 		<div class="absolute inset-0 bg-black opacity-20"></div>
 	</div>

@@ -37,6 +37,19 @@
   }
 </script>
 
+<style>
+  /* Remove number input spinners */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+</style>
+
 <div class="w-11/12 mx-auto py-12 font-haas border-t border-gray-200 mt-12">
   <p class="text-gray-400 pt-8 md:mb-16 mb-6 text-xl">Sprawdź swoje BMI</p>
   <h2 class="text-6xl md:text-9xl font-bold leading-12 md:mt-6 mb-12">

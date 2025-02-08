@@ -36,9 +36,9 @@
     <meta name="description" content="Odkryj Nową Siebie: Profesjonalne Wsparcie w Drodze do Zdrowia i Dobrego Samopoczucia" />
   </svelte:head>
   
-  <div class="min-h-screen font-haas flex flex-col relative">
+  <div class="min-h-screen font-haas flex flex-col relative bg-[#fffdf5]">
 	<!-- Gradient Background -->
-	<div class="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-gray-100"></div>
+	
 	
 	<!-- Content -->
 	<div class="relative w-11/12 max-w-4xl mx-auto py-24 flex-grow flex flex-col">
@@ -49,16 +49,16 @@
   
 	  <!-- Main Content -->
 	  <div class="flex-grow flex flex-col justify-center items-center text-center space-y-12">
-		<h1 class="text-4xl md:text-7xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+		<h1 class="text-4xl md:text-7xl font-bold bg-gradient-to-r from-[#585d33] to-[#dbd6b5] bg-clip-text text-transparent">
 		  Już wkrótce
 		</h1>
 		
 		<div class="space-y-6 max-w-2xl backdrop-blur-sm">
-		  <p class="text-xl md:text-2xl text-gray-600">
+		  <p class="text-xl md:text-2xl text-gray-900">
 			Przygotowujemy dla Ciebie kompleksową platformę, która pomoże Ci osiągnąć Twoje cele zdrowotne:
 		  </p>
 		  
-		  <ul class="text-lg md:text-xl text-gray-700 space-y-4">
+		  <ul class="text-lg md:text-xl text-gray-900 space-y-4">
 			<li class="flex items-center justify-center space-x-2">
 			  <span class="text-black">•</span>
 			  <span>Książki i poradniki oparte na najnowszych badaniach naukowych</span>
@@ -76,7 +76,7 @@
   
 		<!-- Email Signup -->
 		<div class="w-full max-w-md space-y-4">
-		  <p class="text-gray-600">
+		  <p class="text-gray-900">
 			Zapisz się, aby otrzymać powiadomienie o starcie platformy i ekskluzywny dostęp do przedsprzedaży.
 		  </p>
 		  

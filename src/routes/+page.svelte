@@ -69,7 +69,7 @@
 			</li>
 			<li class="flex items-center justify-center space-x-2">
 			  <span class="text-black">•</span>
-			  <span>Interaktywne kursy online z wsparciem ekspertów</span>
+			  <span>Interaktywne kursy online ze wsparciem ekspertów</span>
 			</li>
 		  </ul>
 		</div>
